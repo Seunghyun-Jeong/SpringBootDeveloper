@@ -1,4 +1,4 @@
-package me.seunghyun.springbootdevelop;
+package me.seunghyun.springbootdeveloper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

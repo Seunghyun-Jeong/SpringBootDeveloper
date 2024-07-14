@@ -1,4 +1,4 @@
-package me.seunghyun.springbootdevelop;
+package me.seunghyun.springbootdeveloper;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

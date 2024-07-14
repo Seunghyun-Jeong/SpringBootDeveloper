@@ -1,4 +1,4 @@
-package me.seunghyun.springbootdevelop;
+package me.seunghyun.springbootdeveloper;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
