@@ -1,5 +1,6 @@
 package me.seunghyun.springbootdeveloper.service;
 
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import me.seunghyun.springbootdeveloper.domain.Article;
 import me.seunghyun.springbootdeveloper.dto.AddArticleRequest;
@@ -14,5 +15,9 @@ public class BlogService {
     // 블로그 글 추가 메서드
     public Article save(AddArticleRequest request) {
         return blogRepository.save(request.toEntity());
+    }
+
+    public List<Article> findAll() {
+        return blogRepository.findAll();
     }
 }
