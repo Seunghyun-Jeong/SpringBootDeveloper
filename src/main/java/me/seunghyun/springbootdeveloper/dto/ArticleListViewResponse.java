@@ -11,7 +11,7 @@ public class ArticleListViewResponse {
 
     public ArticleListViewResponse(Article article) {
         this.id = article.getId();
-        this.title = article.getContent();
+        this.title = article.getTitle();
         this.content = article.getContent();
     }
 }
