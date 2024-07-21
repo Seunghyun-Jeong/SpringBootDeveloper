@@ -38,7 +38,7 @@ public class User implements UserDetails { // UserDetails를 상속받아 인증
     }
 
     @Override // 권한 반환
-    public Collection<? extends GrantedAuthority> getAuthirities() {
+    public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("user"));
     }
 
@@ -64,7 +64,7 @@ public class User implements UserDetails { // UserDetails를 상속받아 인증
     // 계정 잠금 여부 반환
     @Override
     public boolean isAccountNonLocked() {
-        // 계정 잠근되었는지 확인하는 로직
+        // 계정 잠금되었는지 확인하는 로직
         return true; // true -> 잠금되지 않았음
     }
 
@@ -75,6 +75,7 @@ public class User implements UserDetails { // UserDetails를 상속받아 인증
         return true; // true -> 만료되지 않았음
     }
 
+    // 계정 사용 가능 여부 반환
     @Override
     public boolean isEnabled() {
         // 계정이 사용 가능한지 확인하는 로직
