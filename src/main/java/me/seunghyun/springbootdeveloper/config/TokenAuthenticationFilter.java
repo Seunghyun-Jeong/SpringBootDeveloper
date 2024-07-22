@@ -1,6 +1,7 @@
 package me.seunghyun.springbootdeveloper.config;
 
 import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -20,7 +21,7 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(
             HttpServletRequest request,
             HttpServletResponse response,
-            FilterChain filterChain) throws SecurityException, IOException {
+            FilterChain filterChain) throws ServletException, IOException {
         // 요청 헤더의 Authorizaztion 키의 값 조회
         String authorizationHeader = request.getHeader(HEADER_AUTHORIZATION);
         // 가져온 값에서 접두사 제거
